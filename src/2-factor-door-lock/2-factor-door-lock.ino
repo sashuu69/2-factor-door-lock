@@ -1,9 +1,19 @@
 /*
+                              $$\                            $$$$$$\  
+                              $$ |                          $$  __$$\ 
+  $$$$$$$\  $$$$$$\   $$$$$$$\ $$$$$$$\  $$\   $$\ $$\   $$\ $$ /  \__|
+$$  _____| \____$$\ $$  _____|$$  __$$\ $$ |  $$ |$$ |  $$ |$$$$$$$\  
+\$$$$$$\   $$$$$$$ |\$$$$$$\  $$ |  $$ |$$ |  $$ |$$ |  $$ |$$  __$$\ 
+  \____$$\ $$  __$$ | \____$$\ $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ /  $$ |
+$$$$$$$  |\$$$$$$$ |$$$$$$$  |$$ |  $$ |\$$$$$$  |\$$$$$$  | $$$$$$  |
+\_______/  \_______|\_______/ \__|  \__| \______/  \______/  \______/
+
  * Project Name: 2 Factor Door Lock
+ * Repository link: https://github.com/sashuu6/2-factor-door-lock
  * Developed by: Sashwat K
  * Created on: 1 Jan 2020
- * Last Modified: 1 Jan 2020
- * Revision: 1
+ * Last Modified: 2 Jan 2020
+ * Revision: 2
 */
 
 #include <LiquidCrystal_I2C.h> // LCD Library
@@ -32,6 +42,7 @@ byte colPins[COLS] = {6,5,4}; //connect to the column pinouts of the keypad
 
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
 
+// Functions
 void dashboard();
 uint8_t resetFingerprint();
 int verifyFingerprint();
