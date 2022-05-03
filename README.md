@@ -49,9 +49,13 @@ The 2 Factor door lock is a locking system built using Arduino UNO, LCD display,
 
 ### Top Layer
 
+![PCB - Top](docs/pcb_front.jpeg)
+
 ![Top layer](docs/top-layer.png)
 
 ### Bottom Layer
+
+![PCB - Bottom](docs/pcb_back.jpeg)
 
 ![Bottom layer](docs/bottom-layer.png)
 
